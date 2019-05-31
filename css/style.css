@@ -2,6 +2,8 @@ body
 {
 	padding: 0;
 	margin: 0;
+	/*background-color: #E6E8E6;*/
+	background-color: #fff;
 }
 
 .container
@@ -12,7 +14,6 @@ body
 
 header
 {
-	height: 200px;
 	background-color: purple;
 	color: #fff;
 }
@@ -108,16 +109,117 @@ header .head-cont p
 }
 
 
-
-.cont1 .part1 .second-div
-{
-	margin-top: 50px;
-}
-
-
 /* Footer*/
 footer
 {
 	height: 50px;
-	background-color: #000;
+	background-color: #1F1E1A;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ABOUT US page*/
+
+.first_section img
+{
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  	filter: grayscale(100%);
+	max-width: 100%;
+  	height: auto;
+}
+
+.intro_img img 
+{
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  	filter: grayscale(100%);
+	max-width: 1024px;
+  	height: auto;
+  	margin-top: 30px;
+}
+
+.second_section .entry_text
+{
+	text-align: center;
+}
+
+.second_section .entry_text h1
+{
+	font-size: 50px;
+}
+
+.second_section .entry_text p
+{
+	font-size: 36px;
+	padding: 0 200px;
+	color: #9B114C;
+	font-style: italic;
+}
+
+.second_section .introduction_part1
+{
+	margin: 20px 0 40px;
+}
+
+.second_section .introduction_part1 .intro_img
+{
+	clear: both;
+}
+
+.second_section .introduction_part1 .intro_text .text_one
+{
+	width: 40%;
+	padding: 0 40px;
+	float: left;
+}
+
+.second_section .introduction_part1 .intro_text .text_two
+{
+	width: 40%;
+	padding: 0 40px;
+	float: right;
+}
+
+.second_section .introduction_part2 .storytelling
+{
+	width: 31%;
+	display: inline-block;
+	padding: 0 10px;
+	text-align: center;
+}
+
+.second_section .introduction_part2 .design-craft
+{
+	width: 31%;
+	display: inline-block;
+	padding: 0 10px;
+	text-align: center;
+}
+
+.second_section .introduction_part2 .technology
+{
+	width: 31%;
+	display: inline-block;
+	padding: 0 10px;
+	text-align: center;
+}
+
+.second_section .introduction_part2
+{
+	margin-bottom: 40px;
+}
+
+.second_section .introduction_part2 h3
+{
+	/*color: #9B114C;*/
+}
+
