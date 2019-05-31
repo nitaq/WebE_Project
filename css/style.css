@@ -1,0 +1,123 @@
+body
+{
+	padding: 0;
+	margin: 0;
+}
+
+.container
+{
+	width: 80%;
+	margin: 0 auto;
+}
+
+header
+{
+	height: 200px;
+	background-color: purple;
+	color: #fff;
+}
+
+header nav
+{
+	height: 60px;
+	background-color: black;
+}
+
+header nav h3
+{
+	float: left;
+}
+
+header nav ul 
+{
+	float: right;
+	margin-top: 25px;
+}
+
+header nav ul li
+{
+	display: inline-block;
+}
+
+header nav ul li a
+{
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 16px;
+	padding-right: 5px;
+}
+
+header .head-cont h1
+{
+	float: left;
+}
+
+header .head-cont p
+{
+	float: right;
+}
+
+
+/* Content - Part1 */
+.cont1
+{
+	height: 500px;
+	background-color: #888;
+}
+
+.cont1 .part1
+{
+	width: 70%;
+	float: left;
+}
+
+.cont1 .part2
+{
+	background-color: #fff;
+	width: 30%;
+	float: right;
+}
+
+.nelt_majtas, .poshte_majtas
+{
+	float: left;
+	width: 50%;
+}
+
+.nelt_djathtas, .poshte_djathtas
+{
+	width: 50%;
+	float: right;
+}
+
+
+.cont2
+{
+	height: 200px;
+	background-color:#555;
+}
+
+
+/* Content - Part2 */
+.cont2 .parts
+{
+	display: inline-block;
+	width: 30%;
+	margin-right: 30px;
+}
+
+
+
+.cont1 .part1 .second-div
+{
+	margin-top: 50px;
+}
+
+
+/* Footer*/
+footer
+{
+	height: 50px;
+	background-color: #000;
+}
