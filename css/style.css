@@ -448,8 +448,10 @@ textarea:focus, input:focus {
 .clear { clear: both; }
 
 .label-input100 {
+	display: block;
   font-family: Montserrat;
   font-size: 10px;
+  font-weight: 600;
   color: #393939;
   line-height: 1.5;
   text-transform: uppercase;
@@ -466,6 +468,153 @@ textarea:focus, input:focus {
   line-height: 1.2;
   padding-right: 15px;
 }
+
+
+.w-full {
+    width: 100%;
+}
+
+.contact100-form-check input
+{
+	display: none;
+}
+
+.wrap-contact100-form-radio,
+.wrap-contact100-form-check,
+.wrap-contact100-form-calendar
+{
+  width: 100%;
+  padding: 15px 25px 20px 25px;
+}
+
+.contact100-form-radio,
+.contact100-form-check
+{
+  padding: 10px 15px;
+  display: inline-block;
+}
+
+
+.input-radio100 {
+  display: none;
+}
+
+.label-radio100 {
+  display: block;
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 600;
+  color: #555555;
+  line-height: 1.2;
+}
+
+.label-check100
+{
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 600;
+  color: #555555;
+  line-height: 1.2;
+}
+
+.label-date100
+{
+	display: block;
+	font-size: 18px;
+	padding-left: 28px;
+	font-family: Montserrat;
+	font-weight: 600;
+	color: #555555;
+	margin-top: 10px;
+}
+
+.label-radio100::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #cdcdcd;
+  background: #fff;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.label-check100::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 20%;
+  border: 1px solid #cdcdcd;
+  background: #fff;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+.label-radio100::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 6px solid transparent;
+  background: #00ad5f;
+  -moz-background-clip: padding;     
+  -webkit-background-clip: padding;  
+  background-clip: padding-box; 
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: none;
+}
+
+.label-check100::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 20%;
+  border: 6px solid transparent;
+  background: #00ad5f;
+  -moz-background-clip: padding;     
+  -webkit-background-clip: padding;  
+  background-clip: padding-box; 
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: none;
+}
+
+.input-radio100:checked + .label-radio100::after {
+  display: block;
+}
+
+.input-check100:checked + .label-check100::after {
+  display: block;
+}
+
+
 
 /*------------------------------------------------------------------
 [ Button ]*/
