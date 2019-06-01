@@ -1,14 +1,17 @@
+
+
 body
 {
 	padding: 0;
 	margin: 0;
 	/*background-color: #E6E8E6;*/
 	background-color: #fff;
+
 }
 
 .container
 {
-	width: 80%;
+	width: 70%;
 	margin: 0 auto;
 }
 
@@ -138,14 +141,29 @@ footer
   	height: auto;
 }
 
+.second_section hr
+{
+	width: 40px;
+}
+
+.second_section .introduction_part1 p, .introduction_part2 p
+{
+	font-family: 'Lato', sans-serif;
+	text-align: justify;
+}
+
+
 .intro_img img 
 {
 	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   	filter: grayscale(100%);
-	max-width: 1024px;
+	max-width: 100%;
   	height: auto;
   	margin-top: 30px;
 }
+
+
+
 
 .second_section .entry_text
 {
@@ -157,12 +175,14 @@ footer
 	font-size: 50px;
 }
 
+
+/* min to 900px*/
 .second_section .entry_text p
 {
-	font-size: 36px;
-	padding: 0 200px;
-	color: #9B114C;
+	padding: 0 70px;
+	font-size: 30px;
 	font-style: italic;
+	color: #9B114C;
 }
 
 .second_section .introduction_part1
@@ -173,6 +193,11 @@ footer
 .second_section .introduction_part1 .intro_img
 {
 	clear: both;
+}
+
+.second_section .introduction_part1 .intro_text
+{
+	margin: 0 5%;
 }
 
 .second_section .introduction_part1 .intro_text .text_one
@@ -189,27 +214,20 @@ footer
 	float: right;
 }
 
-.second_section .introduction_part2 .storytelling
-{
-	width: 31%;
-	display: inline-block;
-	padding: 0 10px;
-	text-align: center;
-}
-
-.second_section .introduction_part2 .design-craft
-{
-	width: 31%;
-	display: inline-block;
-	padding: 0 10px;
-	text-align: center;
-}
-
 .second_section .introduction_part2 .technology
 {
-	width: 31%;
+	width: 30%;
 	display: inline-block;
-	padding: 0 10px;
+	text-align: center;
+
+}
+
+.second_section .introduction_part2 .storytelling,
+.second_section .introduction_part2 .design-craft
+{
+	width: 30%;
+	display: inline-block;
+	margin-right: 25px;
 	text-align: center;
 }
 
@@ -218,8 +236,132 @@ footer
 	margin-bottom: 40px;
 }
 
-.second_section .introduction_part2 h3
-{
-	/*color: #9B114C;*/
+
+
+
+
+/* Responsiveness */
+
+@media only screen and (min-width: 500px) and (max-width: 900px) {
+  .intro_img img {
+    width: 100%;
+  }
+  .second_section .introduction_part1 .intro_text .text_one
+  {
+  	width: 100%;
+  	display: inline-block;
+  	float: left;
+  	padding: 0;
+  	margin-bottom: 20px;
+  }
+  .second_section .introduction_part1 .intro_text .text_two
+  {
+  	width: 100%;
+  	display: inline-block;
+  	float: right;
+  	padding: 0;
+  }
+  .second_section .introduction_part1 .intro_text p
+  {
+  	margin: 0;
+  }
+
+  .second_section .introduction_part2 .storytelling,
+  .second_section .introduction_part2 .design-craft,
+  .second_section .introduction_part2 .technology
+  {
+  	width: 95%;
+  	margin-right: 10px;
+  	margin-bottom: 20px;
+  }
 }
+
+
+
+@media only screen and (min-width: 900px) and (max-width: 1024px) {
+	.second_section .entry_text p {
+		font-size: 36px;
+		color: #9B114C;
+		padding: 0 150px;
+  }
+  .second_section .introduction_part1 .intro_text .text_one
+  {
+  	width: 45%;
+  	display: inline-block;
+  	float: left;
+  	padding: 0;
+  }
+  .second_section .introduction_part1 .intro_text .text_two
+  {
+  	width: 45%;
+  	display: inline-block;
+  	float: right;
+  	padding: 0;
+  }
+
+  .second_section .introduction_part2 .technology
+  {
+  	width: 30%;
+  	margin-bottom: 20px;
+  }
+
+  .second_section .introduction_part2 .storytelling,
+  .second_section .introduction_part2 .design-craft,
+  {
+  	width: 29%;
+	margin-right: 25px;
+  	margin-bottom: 20px;
+  } 
+}
+
+
+
+@media only screen and (min-width: 1025px) and (max-width: 1400px) {
+  .second_section .entry_text p {
+	padding: 0 180px;
+	font-size: 36px;
+	color: #9B114C;
+	font-style: italic;
+  }
+  .second_section .introduction_part1 .intro_text .text_one
+  {
+  	width: 45%;
+  	display: inline-block;
+  	float: left;
+  	padding: 0;
+  }
+  .second_section .introduction_part1 .intro_text .text_two
+  {
+  	width: 45%;
+  	display: inline-block;
+  	float: right;
+  	padding: 0;
+  }
+
+  .second_section .introduction_part2 .technology
+  {
+  	margin: 0 0 0 7px;
+  	padding: 0;
+  }
+
+  .second_section .introduction_part2 .storytelling,
+  .second_section .introduction_part2 .design-craft,
+  {
+  	padding: 0;
+	margin-right: 25px;
+  }
+
+  .second_section .introduction_part2 .storytelling,
+  .second_section .introduction_part2 .design-craft,
+  {
+  	width: 30%;
+	padding: 0;
+	margin-right: 20px;
+  	margin-bottom: 20px;
+  }
+
+}
+
+
+
 
