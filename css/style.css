@@ -6,6 +6,12 @@ body
 	padding: 0;
 }
 
+.first_section img
+{
+	width: 100%;
+	margin-top: 50px;
+}
+
 header
 {
 	position: absolute;
@@ -16,6 +22,7 @@ header
 	width: 100%;
 	box-sizing: border-box; 
 	font-family: 'Lato';
+
 }
 
 header .logo
@@ -24,7 +31,7 @@ header .logo
 	height: 50px;
 	line-height: 50px;
 	float: left;
-	font-weight: bold;
+	font-weight: 400;
 }
 
 header nav
@@ -48,10 +55,11 @@ header nav ul li a
 {
 	height: 50px;
 	line-height: 50px;
-	padding: 0 20px;
+	padding: 0 10px;
 	color: #fff;
 	text-decoration: none; 
 	text-transform: uppercase;
+	font-weight: 300;
 	display: block;
 }
 
@@ -71,7 +79,7 @@ header nav ul li a:hover
 	display: none;
 }
 
-@media (max-width: 991px)
+@media (max-width: 1024px)
 {
 	header
 	{
@@ -108,15 +116,6 @@ header nav ul li a:hover
 
 
 
-
-
-
-/*body
-{
-	padding: 0;
-	margin: 0;
-	background-color: #fff;
-}*/
 
 .container
 {
@@ -240,19 +239,6 @@ footer
 
 
 /* ABOUT US page*/
-
-.first_section
-{
-	margin-top: 50px;
-}
-
-.first_section img
-{
-	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  	filter: grayscale(100%);
-	max-width: 100%;
-  	height: auto;
-}
 
 .second_section hr
 {
