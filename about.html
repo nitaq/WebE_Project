@@ -1,27 +1,26 @@
-<html>
+<!doctype html>
 	<head>
 		<title>Sleek Business - About Us</title>
 		<link rel="stylesheet" href="css/style.css">
 		<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	</head>
 	<body>
 		<!-- Header -->
-			<header>
-					<nav>
-						<div class="container">
-							<h3><i>Welcome to Free-Stock-Graphics.com</i></h3>
-							<ul>
-								<li><a href="index.html">Home</a></li>
-								<li><a href="about.html">About</a></li>
-								<li><a href="#">Brushes</a></li>
-								<li><a href="#">Icons</a></li>
-								<li><a href="#">Tutorials</a></li>
-								<li><a href="#">Contacts</a></li>
-							</ul>
-						</div>
-					</nav>
-				</div>
-			</header>
+		<header>
+			<div class="logo">LOGO</div>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Team</a></li>
+					<li><a href="#">Portfolio</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+			<div class="menu-toggle"><i class="fa fa-bars"></i></div>
+		</header>
 
 			<div class="first_section">
 				<img src="img/img1.jpg" alt="">
@@ -79,5 +78,15 @@
 
 			<!-- Footer -->
 			<footer></footer>
+
+		<!-- Scripts -->
+		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('.menu-toggle').click(function() {
+					$('nav').toggleClass('active')
+				})
+			})
+		</script>
 	</body>
 </html>
