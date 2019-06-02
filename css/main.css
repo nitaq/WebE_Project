@@ -111,6 +111,7 @@ header nav ul li a:hover
 		top: 50px;
 		left: -100%;
 		transition: 0.5s;
+		z-index: 1000;
 	}
 	header nav.active
 	{
@@ -303,6 +304,12 @@ header nav ul li a:hover
 
 /* Slider */
 
+.slider-container
+{
+	width: 80%;
+	margin: 0 auto;
+}
+
 .slideri
 {
 	height: 300px;
@@ -324,4 +331,11 @@ footer
 	position: relative;
 	height: 50px;
 	background-color: #1F1E1A;
+}
+
+@media (max-width: 768px) {
+	.slider-container
+	{
+		width: 95%;
+	}
 }

@@ -642,7 +642,7 @@ textarea:focus, input:focus {
 
 /*nav*/
 
-@media (max-width: 991px)
+@media (max-width: 1024px)
 {
 	header
 	{
