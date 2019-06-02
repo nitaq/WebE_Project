@@ -1,3 +1,80 @@
+/* index */
+
+.entry-section,
+.grid-section
+{
+	height: 300px;
+}
+
+.showcase-section
+{
+	height: 400px;
+}
+
+.showcase-section .showcase-left
+{
+	float: left;
+	width: 70%;
+	background-color: pink;
+
+}
+
+.showcase-section .showcase-right
+{
+	float: right;
+	width: 30%;
+	background-color: #222;
+	color: #fff;
+}
+
+.grid-section h3
+{
+	margin-bottom: 20px;
+}
+
+.grid-section .grid-one,
+.grid-section .grid-two,
+.gridd
+{
+	width: 33%;
+	height: 300px;
+	float: left;
+	color: #fff;
+	padding: 20px;
+}
+
+.grid-list-item
+{
+	display: block;
+	border-top: 2px solid #222;
+}
+
+.grid-list:last-child
+{
+	border-bottom: 2px solid #222;
+}
+
+
+.grid-section .grid-one
+{
+	background-color: #222;
+}
+
+.grid-section .grid-two
+{
+	background-color: #555;
+}
+
+.grid-section .gridd
+{
+	background-color: #999;
+}
+
+
+
+
+
+
 
 
 .error 
