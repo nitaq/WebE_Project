@@ -1,0 +1,326 @@
+/* INDEX.html - Css file */
+body
+{
+	margin: 0;
+	padding: 0;
+	font-family: 'PT Sans', sans-serif; 
+}
+
+/* NAVBAR */
+
+body
+{
+	margin: 0;
+	padding: 0;
+}
+
+.first_section img
+{
+	width: 100%;
+	margin-top: 50px;
+}
+
+header
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 0 100px;
+	background: #262626;
+	width: 100%;
+	opacity: .9;
+	box-sizing: border-box; 
+	font-family: 'Lato';
+
+}
+
+header .logo
+{
+	color: #fff;
+	height: 50px;
+	line-height: 50px;
+	float: left;
+	font-weight: 400;
+}
+
+header nav
+{
+	float: right;
+}
+
+header nav ul
+{
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+header nav ul li 
+{
+	list-style: none;
+}
+
+header nav ul li a 
+{
+	height: 50px;
+	line-height: 50px;
+	padding: 0 20px;
+	color: #fff;
+	text-decoration: none; 
+	text-transform: uppercase;
+	font-weight: 300;
+	display: block;
+}
+
+header nav ul li a:hover
+{
+	color: #000;
+	font-weight: 600;
+	background: #e6e6e6;
+	/*background: #9B114C;*/
+}
+
+.menu-toggle
+{
+	color: #fff;
+	float: right;
+	line-height: 50px;
+	font-size: 24px;
+	cursor: pointer;
+	display: none;
+}
+
+@media (max-width: 1024px)
+{
+	header
+	{
+		padding: 0 20px;
+	}
+	.menu-toggle
+	{
+		display: block;
+	}
+	header nav
+	{
+		position: absolute;
+		width: 100%;
+		height: calc(100vh - 50px);
+		background: #333;
+		top: 50px;
+		left: -100%;
+		transition: 0.5s;
+	}
+	header nav.active
+	{
+		left: 0;
+	}
+	header nav ul
+	{
+		display: block;
+		text-align: center;
+	}
+	header nav ul li a
+	{
+		border-bottom: 1px solid rgba(0,0,0,.2);
+	}
+}
+
+
+
+
+.container
+{
+	width: 80%;
+	margin: 0 auto;
+}
+
+
+
+
+
+.entry-section
+{
+	height: 300px;
+}
+
+.grid-section
+{
+	height: 240px;
+	width: 100%;
+	background-color: #333;
+	margin-top: 200px;
+}
+
+.entry-section
+{
+	margin-top: 50px;
+}
+
+.gradient-section
+{
+  background-image: url("../img/Layer 12.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  left: 0px;
+  top: 50px;
+  width: 100%;
+  height: 400px;
+}
+
+.below-gradient
+{
+  background-color: rgb(218, 218, 218);
+  position: absolute;
+  left: 0;
+  top: 350px;
+  width: 100%;
+  height: 200px;
+  z-index: 2;
+}
+
+
+.showcase-section
+{
+	height: 400px;
+}
+
+.showcase-section .showcase-left
+{
+	float: left;
+	width: 60%;
+	margin: 40px 0;
+}
+
+.showcase-section .showcase-left .sc-item
+{
+	width: 38%;
+	display: inline-block;
+}
+
+.showcase-section .showcase-left .sc-item h4
+{
+	margin: 0;
+}
+
+.second-ch
+{
+	margin-left: 80px;
+}
+
+.sc-item-img
+{
+	display: inline-block;
+}
+
+.sc-item-img img
+{
+	width: 50px;
+	height: 50px;
+}
+
+.sc-item-text
+{
+	position: relative;
+	left: 60px;
+	bottom: 60px;
+	font-size: 14px;
+}
+
+.sc-left-bottom h2
+{
+	margin: 10px 0 15px;
+
+}
+
+.showcase-section p
+{
+	line-height: 1.4;
+}
+
+.showcase-section .showcase-right
+{
+	float: right;
+	width: 30%;
+	background-color: #333;
+	color: #fff;
+	padding: 25px;
+}
+
+.sc-right-items
+{
+	margin-bottom: 15px;
+}
+
+
+
+
+.grid-section h4
+{
+	margin-bottom: 20px;
+}
+
+.grid-section .grid-one,
+.grid-section .grid-two,
+.gridd
+{
+	width: 29%;
+	height: 200px;
+	float: left;
+	color: #fff;
+	padding: 20px;
+
+
+}
+
+.grid-one p
+{
+	line-height: 1.8;
+}
+
+.grid-list-item
+{
+	display: block;
+}
+
+.grid-two .grid-list ul
+{
+	padding: 0;
+}
+
+.grid-two .grid-list ul li
+{
+	list-style: none;
+	padding-bottom: 10px;
+}
+
+
+
+
+
+
+/* Slider */
+
+.slideri
+{
+	height: 300px;
+}
+.jSlider
+{
+    bottom: 200px;
+}
+
+.jSlider img 
+{
+    height: 450px;
+}
+
+
+/* Footer*/
+footer
+{
+	position: relative;
+	height: 50px;
+	background-color: #1F1E1A;
+}
