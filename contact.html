@@ -1,8 +1,9 @@
 <!doctype html>
 	<head>
 		<title>Sleek Business - Contact Us</title>
+		<meta charset="UTF-8">
 		<link rel="stylesheet" href="css/style.css">
-
+		
 		<link href="https://fonts.googleapis.com/css?family=Lato:300,400&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,900&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
@@ -17,7 +18,6 @@
 					<li><a href="index.html">Home</a></li>
 					<li><a href="about.html">About</a></li>
 					<li><a href="#">Work</a></li>
-					<li><a href="#">Portfolio</a></li>
 					<li><a href="#">Contact</a></li>
 				</ul>
 			</nav>
@@ -31,21 +31,31 @@
 			
 
 				<!-- FULL NAME -->
-				<div class="wrap-input100 validate-input bg1" data-validate="Please Type Your Name">
+				<div class="wrap-input100 bg1" data-validate="Please Type Your Name">
 					<span class="label-input100">FULL NAME *</span>
-					<input class="input100" type="text" name="name" placeholder="Enter Your Name">
+					<label for="name"></label>
+					<input class="input100" type="text" name="name" required placeholder="Enter Your Name"
+					data-validation="custom" 
+					data-validation-regexp="^([a-zA-Z]+)$"
+					>
 				</div>
 
+
+
 				<!-- EMAIL -->
-				<div class="wrap-input100 validate-input bg1 rs1-wrap-input100" data-validate = "Enter Your Email (e@a.x)">
+				<div class="wrap-input100 validate-input bg1 rs1-wrap-input100" data-validate="Enter Your Email (e@a.x)">
 					<span class="label-input100">Email *</span>
-					<input class="input100" type="text" name="email" placeholder="Enter Your Email ">
+					<input class="input100" type="text" name="email" required placeholder="Enter Your Email" 
+					data-validation="required email"
+					>
 				</div>
 				
 				<!-- PHONE -->
-				<div class="wrap-input100 bg1 rs1-wrap-input100">
-					<span class="label-input100">Phone</span>
-					<input class="input100" type="text" name="phone" placeholder="Enter Number Phone">
+				<div class="wrap-input100 validate-input bg1 rs1-wrap-input100" data-validate= "Enter Your Phone Number">
+					<span class="label-input100">Phone *</span>
+					<input class="input100" type="tel" name="phone" required min="9" max="11" placeholder="Enter Number Phone"
+					data-validation="custom" 
+					data-validation-regexp="^[0-9]{9}$">
 				</div>
 			
 				<!-- radio button -->
@@ -55,19 +65,19 @@
 						<span class="label-input100">What are you interested in?</span>
 
 						<div class="contact100-form-radio m-t-15">
-							<input class="input-radio100" id="radio1" type="radio" name="type-product" value="physical" checked="checked">
+							<input class="input-radio100" id="radio1" type="radio" name="type-product" value="physical" >
 							<label class="label-radio100" for="radio1">
 								Physical Products
 							</label>
 						</div>
 						<div class="contact100-form-radio">
-							<input class="input-radio100" id="radio2" type="radio" name="type-product" value="digital">
+							<input class="input-radio100" id="radio2" type="radio" name="type-product" value="digital" >
 							<label class="label-radio100" for="radio2">
 								Digital Products
 							</label>
 						</div>
 						<div class="contact100-form-radio">
-							<input class="input-radio100" id="radio3" type="radio" name="type-product" value="service">
+							<input class="input-radio100" id="radio3" type="radio" name="type-product" value="service" >
 							<label class="label-radio100" for="radio3">
 								Services Consulting
 							</label>
@@ -109,8 +119,9 @@
 						<span class="label-input100">Please put the date of your request</span>
 
 						<div class="contact100-check-check">
-							<input class="label-date100" type="date" name="bday" id="req-date">
-							<label  for="req-date"></label>
+							<input class="label-date100" type="date" required name="date" id="req-date"
+							data-validation="date">
+							<label for="req-date"></label>
 						</div>
 						
 					</div> <!-- end.CALENDAR -->
@@ -118,9 +129,9 @@
 				</div>
 
 				<!-- MESSAGE -->
-				<div class="wrap-input100 validate-input bg0 rs1-alert-validate clear" data-validate = "Please Type Your Message">
+				<div class="wrap-input100  bg0  clear" >
 					<span class="label-input100">Message</span>
-					<textarea class="input100" name="message" placeholder="Your message here..."></textarea>
+					<textarea class="input100" name="message" required placeholder="Your message here..."></textarea>
 				</div>
 		
 				<!-- BUTTON -->
@@ -144,7 +155,17 @@
 
 
 		<!-- Scripts -->
-		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+
+	    <script>
+			$.validate({
+				errorMessageClass: "error",
+			});
+		</script>
+
+
 
 		<script type="text/javascript">
 			$(document).ready(function() {
@@ -153,40 +174,6 @@
 				})
 			})
 		</script>
-		
 
-		<!--===============================================================================================-->
-	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/animsition/js/animsition.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/bootstrap/js/popper.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/select2/select2.min.js"></script>
-	<script>
-		$(".js-select2").each(function(){
-			$(this).select2({
-				minimumResultsForSearch: 20,
-				dropdownParent: $(this).next('.dropDownSelect2')
-			});
-
-
-			$(".js-select2").each(function(){
-				$(this).on('select2:close', function (e){
-					if($(this).val() == "Please chooses") {
-						$('.js-show-service').slideUp();
-					}
-					else {
-						$('.js-show-service').slideUp();
-						$('.js-show-service').slideDown();
-					}
-				});
-			});
-		})
-	</script>
-	<!--===============================================================================================-->
-	<script src="js/main.js"></script>
-   
 	</body>
 </html>

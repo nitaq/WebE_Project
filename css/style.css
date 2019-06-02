@@ -1,3 +1,15 @@
+
+
+.error 
+{
+    color: #e74c3c;
+}
+
+
+
+
+
+
 /* NAVBAR */
 
 body
@@ -20,6 +32,7 @@ header
 	padding: 0 100px;
 	background: #262626;
 	width: 100%;
+	opacity: .9;
 	box-sizing: border-box; 
 	font-family: 'Lato';
 
@@ -55,7 +68,7 @@ header nav ul li a
 {
 	height: 50px;
 	line-height: 50px;
-	padding: 0 10px;
+	padding: 0 20px;
 	color: #fff;
 	text-decoration: none; 
 	text-transform: uppercase;
@@ -65,8 +78,10 @@ header nav ul li a
 
 header nav ul li a:hover
 {
-	color: #fff;
-	background: #9B114C;
+	color: #000;
+	font-weight: 600;
+	background: #e6e6e6;
+	/*background: #9B114C;*/
 }
 
 .menu-toggle
@@ -369,6 +384,22 @@ body
 	background-color: #e6e6e6;
 	justify-content: center;
 	align-items: center;
+}
+
+input {
+	outline: none;
+	border: none;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
 }
 
 .container-contact
@@ -699,14 +730,18 @@ textarea:focus, input:focus {
   padding: 0 45px 0 22px;
   pointer-events: none;
 
-  font-family: Montserrat-SemiBold;
+  font-family: Montserrat;
   font-size: 18px;
+  font-weight: 600;
   color: #fa4251;
   line-height: 1.2;
 }
 
+
+
 .btn-hide-validate {
-  font-family: Material-Design-Iconic-Font;
+  font-family: fontawesome !important;
+  content: "\f075";
   font-size: 18px;
   color: #fa4251;
   cursor: pointer;
@@ -730,7 +765,7 @@ textarea:focus, input:focus {
 
 .true-validate::after {
   content: "\f26b";
-  font-family: Material-Design-Iconic-Font;
+  font-family: FontAwesome;
   font-size: 18px;
   color: #00ad5f;
   display: -webkit-box;
