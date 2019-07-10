@@ -20,7 +20,7 @@ footer
 body
 {
 	margin: 0;
-	padding: 0;
+	padding: 50px 0 0 0;
 }
 
 .first_section img
@@ -79,6 +79,12 @@ header nav ul li a
 	text-transform: uppercase;
 	font-weight: 300;
 	display: block;
+}
+
+header nav ul li a .log-reg
+{
+	background: #9B114C;
+    font-weight: 500;
 }
 
 header nav ul li a:hover
@@ -150,19 +156,31 @@ header nav ul li a:hover
 
 .intro_img img 
 {
-	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+	-webkit-filter: grayscale(100%);
   	filter: grayscale(100%);
 	max-width: 100%;
   	height: auto;
   	margin-top: 30px;
 }
 
+.row {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
 
-
+.column {
+	flex-grow:0;
+	flex-shrink:0;
+	flex-basis:calc(33% - 10px); /* separate properties for IE11 upport */
+	font-size: 20px;
+	margin: 5px;
+}
 
 .second_section .entry_text
 {
 	text-align: center;
+	font-family: 'DM Serif Display', serif;
 }
 
 .second_section .entry_text h1
@@ -336,7 +354,7 @@ header nav ul li a:hover
   }
 
   .second_section .introduction_part2 .storytelling,
-  .second_section .introduction_part2 .design-craft,
+  .second_section .introduction_part2 .design-craft
   {
   	width: 29%;
 	margin-right: 25px;
@@ -375,14 +393,14 @@ header nav ul li a:hover
   }
 
   .second_section .introduction_part2 .storytelling,
-  .second_section .introduction_part2 .design-craft,
+  .second_section .introduction_part2 .design-craft
   {
   	padding: 0;
 	margin-right: 25px;
   }
 
   .second_section .introduction_part2 .storytelling,
-  .second_section .introduction_part2 .design-craft,
+  .second_section .introduction_part2 .design-craft
   {
   	width: 30%;
 	padding: 0;
@@ -391,3 +409,7 @@ header nav ul li a:hover
   }
 
 }
+
+
+
+
